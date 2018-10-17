@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "test",
-    "fix:js": "eslint --fix test/** migrations/**",
+    "fix:js": "eslint --fix test/fuzzy.js ",
     "test:break": "truffle test --network=ganache ./test/fuzzy.js"
   },
   "keywords": [

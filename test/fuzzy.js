@@ -1,7 +1,7 @@
 const BountyHeap = artifacts.require('BountyHeap');
 
 // Number of tests to run
-const testCount = 10;
+const testCount = 3;
 
 // Max elements to generate
 const maxNumberOfNewElements = 4;
@@ -97,7 +97,7 @@ contract('BountyHeap', async (accounts) => {
 const addRandomElements = async (
     elements,
     bountyHeap,
-    howMany = Math.floor(Math.random() * maxNumberOfNewElements) + 1
+    howMany = Math.floor(Math.random() * maxNumberOfNewElements) + 1,
 ) => {
     const elementsCount = howMany;
 
