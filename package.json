@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "fix:js": "eslint --fix test/** migrations/**",
+    "test:break": "truffle test --network=ganache ./test/fuzzy.js"
   },
   "keywords": [
     "ethereum",
@@ -21,5 +23,14 @@
   "dependencies": {
     "treeify": "^1.1.0",
     "truffle": "^4.1.14"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-react": "^7.11.1",
+    "truffle-hdwallet-provider": "0.0.6"
   }
 }
