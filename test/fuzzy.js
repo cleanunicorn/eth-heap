@@ -22,7 +22,7 @@ contract('BountyHeap', async (accounts) => {
     owner = accounts[0];
     player = accounts[1];
 
-    it('should insert() and extractMax() elements correctly', async () => {
+    it('fuzzy test: adding, removing, extracting max randomized', async () => {
         await repeatTest(
             async () => {
                 const bountyHeap = await BountyHeap.new(owner, { from: owner });
